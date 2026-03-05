@@ -1,6 +1,6 @@
-name: image-indexer-ui
-title: Image Indexer UI
+name: vibe-search-desktop
+title: Vibe Search Desktop
 version: master
 start_page: ROOT:index.adoc
 nav:
-- modules/ROOT/nav.adoc
+  - modules/ROOT/nav.adoc
