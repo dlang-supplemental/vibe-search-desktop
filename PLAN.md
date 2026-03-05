@@ -1,27 +1,28 @@
-= UI Implementation Plan
+# UI Implementation Plan: Vibe Search Desktop
 
-== Overview
-DlangUI frontend for the Image Indexer.
+## Overview
 
-=== Logic
+A high-performance DlangUI frontend for the `densor`-powered semantic search engine.
+
+### Logic
+
 - **State Management**: Simple state store for loaded images and search results.
-- **Async Execution**: Indexing must happen in a separate thread to avoid freezing UI.
+- **Async Execution**: Indexing must happen in a separate thread to avoid freezing UI (using `std.parallelism`).
 
-=== Components
-- **ImageGrid**: Custom widget to display thumbnails.
-- **SearchBar**: Input for text queries.
-- **StatusPanel**: Progress bar for indexing.
+### Components
 
-=== Future
-- **Virtualization**: Handle checking 10k+ images without UI lag.
-- **Settings**: Configure model paths and hardware acceleration (CPU/CUDA/ROCm).
-- **HuggingFace & ModelScope Integration**: 
-    - Add a "Model Store" tab to browse and download models (GGUF/ONNX).
-    - Use their APIs to search for 'vision' or 'clip' models.
+- **ImageGrid**: Custom virtualized widget to display thousands of thumbnails without lag.
+- **SearchBar**: Input for natural language queries (Text-to-Image search).
+- **StatusPanel**: Real-time feedback for indexing progress and model load status.
 
-=== Design Aesthetics
-- **Theme**: Dark mode by default with high contrast and modern typography (e.g. Inter/Roboto via DlangUI fonts).
-- **Interactions**: Smooth hover effects on buttons and thumbnails.
-- **Micro-animations**: Loading spinners, smooth transitions between search and results.
+### Future
 
+- **Settings**: Advanced configuration for `densor` execution (thread count, SIMD mode).
+- **Model Hub**: Integrated downloader for GGUF/ONNX models from HuggingFace/ModelScope.
 
+### Design Aesthetics
+
+- **Theme**: Premium dark mode. Uses custom color tokens (Deep Slate, Neon Accents).
+- **Typography**: Responsive font system (Inter/Outfit).
+- **Interactions**: Smooth hover vignettes on thumbnails.
+- **Animations**: Subtle fade-ins for search results.

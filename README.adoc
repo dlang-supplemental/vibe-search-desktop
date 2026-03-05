@@ -1,16 +1,52 @@
-= Image Indexer UI
+= Semantic Image Search (Desktop)
+:toc: macro
+:toc-title: Table of Contents
 
-== Summary
-Frontend UI for the Image Indexer application, built with DlangUI.
+A sleek, cross-platform desktop application for browsing and searching your local photo library using AI. Unlike standard gallery apps, this allows you to search for "what's in the photo" rather than just filenames.
 
-== Features
-- Select folder to index.
-- Search images by text (multimodal CLIP search).
-- Display grid of results.
+toc::[]
 
-== Architecture
-- **Framework**: DlangUI.
-- **Backend**: Uses `image-indexer-core`.
+== 💡 Explanation: Why use this?
 
-== Usage
-`dub run`
+Most photo apps require you to manually tag images or rely on cloud services (like Google Photos) that compromise your privacy. **Semantic Image Search** brings that same "vibe-based" search capability to your local machine:
+
+*   **Privacy First**: No images or data ever leave your computer.
+*   **Semantic Understanding**: Search for concepts like "happy dog", "moody forest", or "blueprint schematics".
+*   **Performant**: Built with native D-lang for a responsive, lightweight experience.
+
+== 🚀 Tutorial: First Run
+
+1.  **Build the application**:
++
+[source,bash]
+----
+dub build
+----
+
+2.  **Launch**:
++
+[source,bash]
+----
+dub run
+----
+
+3.  **Initial Setup**:
+    *   Click "Select Model" and pick a CLIP `.gguf` file.
+    *   Click "Add Folder" to choose which directory of photos to index.
+    *   Wait for the indexing progress bar to complete.
+
+== 🛠️ How-to: Searching Effectively
+
+*   **Natural Language**: Use full sentences like "a person wearing a red hat."
+*   **Colors & Moods**: Search for specific aesthetics like "vaporwave aesthetic" or "sepia tones."
+*   **Refining Results**: Use the "Top K" slider to increase or decrease the number of matches shown.
+
+== 📖 Reference: Technical Details
+
+*   **Frontend Framework**: link:https://github.com/buggins/dlangui[DlangUI]
+*   **Search Engine**: `image-indexer-core`
+*   **Vector Backend**: `vector-search-dlang`
+*   **Inference Engine**: `densor`
+
+== ⚖️ License
+MIT
