@@ -1,6 +1,6 @@
 name: vibe-search-desktop
 title: Vibe Search Desktop
-version: master
+version: main
 start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc
