@@ -1,52 +1,80 @@
+ifndef::env-github[:icons: font]
+:toc: preamble
+:toclevels: 2
+:sectanchors:
+
+ifndef::env-github[]
+image:https://img.shields.io/github/contributors/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Contributors,link=https://github.com/dlang-supplemental/vibe-search-desktop/graphs/contributors]
+image:https://img.shields.io/github/forks/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Forks,link=https://github.com/dlang-supplemental/vibe-search-desktop/network/members]
+image:https://img.shields.io/github/stars/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Stars,link=https://github.com/dlang-supplemental/vibe-search-desktop/stargazers]
+image:https://img.shields.io/github/issues/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Issues,link=https://github.com/dlang-supplemental/vibe-search-desktop/issues]
+endif::[]
+
+ifdef::env-github[]
+image:https://img.shields.io/github/contributors/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Contributors]
+image:https://img.shields.io/github/forks/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Forks]
+image:https://img.shields.io/github/stars/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Stars]
+image:https://img.shields.io/github/issues/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Issues]
+endif::[]
+
 = Semantic Image Search (Desktop)
-:toc: macro
-:toc-title: Table of Contents
 
-A sleek, cross-platform desktop application for browsing and searching your local photo library using AI. Unlike standard gallery apps, this allows you to search for "what's in the photo" rather than just filenames.
+A sleek, cross-platform desktop application for browsing and searching your local photo library using AI.
 
-toc::[]
+link:https://dlang-supplemental.github.io/docs[Explore the docs] ·
+link:https://github.com/dlang-supplemental/vibe-search-desktop/issues[Report Bug]
 
-== 💡 Explanation: Why use this?
+Unlike standard gallery apps, this allows you to search for "what's in the photo" rather than just filenames.
+
+== About The Project
 
 Most photo apps require you to manually tag images or rely on cloud services (like Google Photos) that compromise your privacy. **Semantic Image Search** brings that same "vibe-based" search capability to your local machine:
 
-*   **Privacy First**: No images or data ever leave your computer.
-*   **Semantic Understanding**: Search for concepts like "happy dog", "moody forest", or "blueprint schematics".
-*   **Performant**: Built with native D-lang for a responsive, lightweight experience.
+* **Privacy First**: No images or data ever leave your computer.
+* **Semantic Understanding**: Search for concepts like "happy dog", "moody forest", or "blueprint schematics".
+* **Performant**: Built with native D-lang for a responsive, lightweight experience.
 
-== 🚀 Tutorial: First Run
+== Built With
 
-1.  **Build the application**:
-+
+* link:https://github.com/buggins/dlangui[DlangUI] — desktop UI
+* `vibe-search-core` — search orchestration
+* `vector-store-dlang` — vector backend
+* `densor` — inference engine
+
+== Getting Started
+
+1. **Build the application**:
+
 [source,bash]
 ----
 dub build
 ----
 
-2.  **Launch**:
-+
+2. **Launch**:
+
 [source,bash]
 ----
 dub run
 ----
 
-3.  **Initial Setup**:
-    *   Click "Select Model" and pick a CLIP `.gguf` file.
-    *   Click "Add Folder" to choose which directory of photos to index.
-    *   Wait for the indexing progress bar to complete.
+3. **Initial Setup**:
+    * Click "Select Model" and pick a CLIP `.gguf` file.
+    * Click "Add Folder" to choose which directory of photos to index.
+    * Wait for the indexing progress bar to complete.
 
-== 🛠️ How-to: Searching Effectively
+== Usage
 
-*   **Natural Language**: Use full sentences like "a person wearing a red hat."
-*   **Colors & Moods**: Search for specific aesthetics like "vaporwave aesthetic" or "sepia tones."
-*   **Refining Results**: Use the "Top K" slider to increase or decrease the number of matches shown.
+* **Natural Language**: Use full sentences like "a person wearing a red hat."
+* **Colors & Moods**: Search for specific aesthetics like "vaporwave aesthetic" or "sepia tones."
+* **Refining Results**: Use the "Top K" slider to increase or decrease the number of matches shown.
 
-== 📖 Reference: Technical Details
+== License
 
-*   **Frontend Framework**: link:https://github.com/buggins/dlangui[DlangUI]
-*   **Search Engine**: `vibe-search-core`
-*   **Vector Backend**: `vector-store-dlang`
-*   **Inference Engine**: `densor`
-
-== ⚖️ License
 MIT
+
+== Contact
+
+DLang Supplemental — dlang@devcentr.org
+
+* Project: https://github.com/dlang-supplemental/vibe-search-desktop
+* Site: https://dlang-supplemental.github.io
