@@ -3,19 +3,12 @@ ifndef::env-github[:icons: font]
 :toclevels: 2
 :sectanchors:
 
-ifndef::env-github[]
+[[readme-top]]
+
 image:https://img.shields.io/github/contributors/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Contributors,link=https://github.com/dlang-supplemental/vibe-search-desktop/graphs/contributors]
 image:https://img.shields.io/github/forks/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Forks,link=https://github.com/dlang-supplemental/vibe-search-desktop/network/members]
 image:https://img.shields.io/github/stars/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Stars,link=https://github.com/dlang-supplemental/vibe-search-desktop/stargazers]
 image:https://img.shields.io/github/issues/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Issues,link=https://github.com/dlang-supplemental/vibe-search-desktop/issues]
-endif::[]
-
-ifdef::env-github[]
-image:https://img.shields.io/github/contributors/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Contributors]
-image:https://img.shields.io/github/forks/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Forks]
-image:https://img.shields.io/github/stars/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Stars]
-image:https://img.shields.io/github/issues/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Issues]
-endif::[]
 
 = Semantic Image Search (Desktop)
 
@@ -34,12 +27,22 @@ Most photo apps require you to manually tag images or rely on cloud services (li
 * **Semantic Understanding**: Search for concepts like "happy dog", "moody forest", or "blueprint schematics".
 * **Performant**: Built with native D-lang for a responsive, lightweight experience.
 
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+
 == Built With
 
-* link:https://github.com/buggins/dlangui[DlangUI] — desktop UI
-* `vibe-search-core` — search orchestration
-* `vector-store-dlang` — vector backend
-* `densor` — inference engine
+* UI
+** link:https://github.com/buggins/dlangui[image:https://img.shields.io/badge/DlangUI-B03931?style=for-the-badge&logo=d&logoColor=white[DlangUI]]
+* Search stack
+** `vibe-search-core` — search orchestration
+** `vector-store-dlang` — vector backend
+** `densor` — inference engine
+
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
 
 == Getting Started
 
@@ -68,9 +71,29 @@ dub run
 * **Colors & Moods**: Search for specific aesthetics like "vaporwave aesthetic" or "sepia tones."
 * **Refining Results**: Use the "Top K" slider to increase or decrease the number of matches shown.
 
+== Contributing
+
+Contributions are welcome. Open an issue before large changes.
+
+=== Top contributors
+
+++++
+<a href="https://github.com/dlang-supplemental/vibe-search-desktop/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=dlang-supplemental/vibe-search-desktop" alt="contributors" />
+</a>
+++++
+
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
+
 == License
 
 MIT
+
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
 
 == Contact
 
@@ -78,3 +101,7 @@ DLang Supplemental — dlang@devcentr.org
 
 * Project: https://github.com/dlang-supplemental/vibe-search-desktop
 * Site: https://dlang-supplemental.github.io
+
+++++
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+++++
