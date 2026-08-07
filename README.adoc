@@ -3,8 +3,26 @@ ifndef::env-github[:icons: font]
 :toclevels: 2
 :sectanchors:
 
-[[readme-top]]
+ifdef::env-github[]
+++++
+<a id="readme-top"></a>
+<div align="center">
+<a href="https://github.com/dlang-supplemental/vibe-search-desktop/graphs/contributors"><img src="https://img.shields.io/github/contributors/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge" alt="Contributors"></a>
+<a href="https://github.com/dlang-supplemental/vibe-search-desktop/network/members"><img src="https://img.shields.io/github/forks/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge" alt="Forks"></a>
+<a href="https://github.com/dlang-supplemental/vibe-search-desktop/stargazers"><img src="https://img.shields.io/github/stars/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge" alt="Stars"></a>
+<a href="https://github.com/dlang-supplemental/vibe-search-desktop/issues"><img src="https://img.shields.io/github/issues/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge" alt="Issues"></a>
+<br />
+<h3 align="center">Semantic Image Search (Desktop)</h3>
+<p align="center">
+A sleek, cross-platform desktop application for browsing and searching your local photo library using AI.<br />
+<a href="https://dlang-supplemental.github.io/docs"><strong>Explore the docs »</strong></a><br /><br />
+<a href="https://github.com/dlang-supplemental/vibe-search-desktop/issues">Report Bug</a>
+</p>
+</div>
+++++
+endif::[]
 
+ifndef::env-github[]
 image:https://img.shields.io/github/contributors/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Contributors,link=https://github.com/dlang-supplemental/vibe-search-desktop/graphs/contributors]
 image:https://img.shields.io/github/forks/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Forks,link=https://github.com/dlang-supplemental/vibe-search-desktop/network/members]
 image:https://img.shields.io/github/stars/dlang-supplemental/vibe-search-desktop.svg?style=for-the-badge[Stars,link=https://github.com/dlang-supplemental/vibe-search-desktop/stargazers]
@@ -16,6 +34,7 @@ A sleek, cross-platform desktop application for browsing and searching your loca
 
 link:https://dlang-supplemental.github.io/docs[Explore the docs] ·
 link:https://github.com/dlang-supplemental/vibe-search-desktop/issues[Report Bug]
+endif::[]
 
 Unlike standard gallery apps, this allows you to search for "what's in the photo" rather than just filenames.
 
