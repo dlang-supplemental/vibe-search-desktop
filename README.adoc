@@ -53,7 +53,7 @@ Most photo apps require you to manually tag images or rely on cloud services (li
 == Built With
 
 * UI
-** link:https://github.com/buggins/dlangui[image:https://img.shields.io/badge/DlangUI-B03931?style=for-the-badge&logo=d&logoColor=white[DlangUI]]
+** link:https://github.com/dlang-supplemental/dui[dui] + link:https://github.com/dlang-supplemental/dew[dew] (Vello GPU or software fallback)
 * Search stack
 ** `vibe-search-core` — search orchestration
 ** `vector-store-dlang` — vector backend
@@ -69,14 +69,21 @@ Most photo apps require you to manually tag images or rely on cloud services (li
 
 [source,bash]
 ----
-dub build
+dub build -c software
+----
+
+For GPU rendering (requires Rust/cargo + vello-d bridge):
+
+[source,bash]
+----
+dub build -c gpu
 ----
 
 2. **Launch**:
 
 [source,bash]
 ----
-dub run
+dub run -c software
 ----
 
 3. **Initial Setup**:

@@ -1,0 +1,5 @@
+= 2026-09-01 — dui/dew UI host
+
+* Migrated desktop shell from DlangUI to dui/dew (GLFW + incremental resize rendering).
+* Fixed toolbar/search layout: setup actions render in the first row; search sits below.
+* `dub build -c software` for CPU window; `-c gpu` when Rust/Vello bridge is available.

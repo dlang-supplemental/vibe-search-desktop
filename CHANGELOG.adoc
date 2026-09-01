@@ -1,0 +1,8 @@
+= Changelog
+
+== 2026-09-01 — dui/dew UI host
+
+* Migrated from DlangUI to dui/dew with GLFW window host.
+* Toolbar row (Select Model, Add Folder) now sits above the search bar — no overlap.
+* Window resize re-layouts and re-renders each frame via `syncFromFramebuffer` instead of OS stretch.
+* Added `software` (CPU/GDI) and `gpu` (Vello) build configurations.

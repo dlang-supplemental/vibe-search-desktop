@@ -3,13 +3,41 @@
 	"authors": [
 		"Antigravity"
 	],
-	"description": "DlangUI frontend for image indexer.",
+	"description": "dui/dew desktop frontend for semantic image search.",
 	"copyright": "Copyright © 2026, Antigravity",
 	"license": "MIT",
+	"targetType": "executable",
 	"dependencies": {
-		"dlangui": "~>0.10.8",
+		"dew": {
+			"path": "../dew"
+		},
+		"dui": {
+			"path": "../dui"
+		},
+		"glfw-d": "~>1.1.2",
+		"tgc": "~>0.1.1",
 		"vibe-search-core": {
 			"path": "../vibe-search-core"
 		}
-	}
+	},
+	"configurations": [
+		{
+			"name": "software",
+			"versions": [
+				"VibeSoftwareWindow"
+			],
+			"subConfigurations": {
+				"dew": "library"
+			}
+		},
+		{
+			"name": "gpu",
+			"versions": [
+				"VibeGpuWindow"
+			],
+			"subConfigurations": {
+				"dew": "gpu"
+			}
+		}
+	]
 }
